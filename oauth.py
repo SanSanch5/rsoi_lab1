@@ -32,7 +32,7 @@ def app():
         return "Wrong auth"
 
     access_token = response.json()["access_token"]
-    url = r"https://api.sandbox.paypal.com/v1/identity/openidconnect/userinfo/?schema=openid"
+    url = r"https://api.sandbox.paypal.com/v1/payments/payment"
     headers = {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + access_token}
 
     response = requests.get(url=url, headers=headers)
@@ -40,8 +40,7 @@ def app():
         return "Internal request error"
 
     text = response.text
-    d = json.loads(text)
-    return d["user_id"]
+    return json.loads(text)
 
 if __name__ == "__main__":
     application.run()
