@@ -4,8 +4,8 @@ import requests.auth
 import json
 application = Flask(__name__)
 
-client_id = r"AasGhRDDdldHbebf_8vpMjQGQW7ejunpyr9KEJE2-39ruztvgMWRczvPJfpB"
-secret_key = r"ELcdKxBW53TZj8iqVR8nbBJpDA98eKnO0--71Eog0MoN3ZBamCQaUPy7l0bf"
+client_id = r"AeMm_oSd9X3-M3eLB_d8UoFcRx_h0OI-8YYCF1889-QFjkjb7HIpYI5QZe3fsWknSDnBJvj0LvvzOZRT"
+secret_key = r"EMN0p2OMPBDyPS0Ta1C0qDy4vjDgaXICKUVsMPoL4Jzq7BwdkkVC9Y6tEaN8I7X0LtwQEHX6Yp3va5u6"
 
 redirect_uri = r"http://127.0.0.1:5000/app"
 
